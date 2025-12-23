@@ -81,7 +81,7 @@ void core1_main() {
   tuh_init(1);
 
   while (true) {
-    tuh_task(); // tinyusb host task
+    tuh_task(); // tinyusb host task, process all data coming from keyboard
   }
 }
 
@@ -151,6 +151,7 @@ static void process_kbd_report(uint8_t dev_addr, hid_keyboard_report_t const *re
   static hid_keyboard_report_t prev_report = { 0, 0, {0} }; // previous report to check key released
   bool flush = false;
 
+  // send keyboard report data to real host, via tud task (which is in core0)
   tud_hid_keyboard_report(REPORT_ID_KEYBOARD, report->modifier, (uint8_t*) report->keycode);
   
   for(uint8_t i=0; i<6; i++)
@@ -171,6 +172,7 @@ static void process_kbd_report(uint8_t dev_addr, hid_keyboard_report_t const *re
         if (ch)
         {
           if (ch == '\n') tud_cdc_write("\r", 1);
+          // also, write to cdc for logging, which will be sent in core0
           tud_cdc_write(&ch, 1);
           flush = true;
         }

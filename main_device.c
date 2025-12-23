@@ -62,9 +62,10 @@ int main(void) {
   // init device stack on native usb (roothub port0)
   tud_init(0);
 
+  // device task, handles sending all CDC and HID events over USB to real host
   while (true) {
-    tud_task(); // tinyusb device task
-    tud_cdc_write_flush();
+    tud_task(); // tinyusb device task, process all usb events (CDC & HID)
+    tud_cdc_write_flush(); // send all data when available
   }
 
   return 0;
@@ -82,8 +83,17 @@ void tud_cdc_rx_cb(uint8_t itf)
   char buf[64];
   uint32_t count = tud_cdc_read(buf, sizeof(buf));
 
+  // TODO send a simple received string message when getting data from CDC
   // TODO control LED on keyboard of host stack
-  (void) count;
+  //(void) count;
+  char rxmessage[64];
+  int len = sprintf(rxmessage, "Received %d bytes from host\r\n", count);
+  tud_cdc_write(rxmessage, len);
+
+  // Echo back the received data
+  tud_cdc_write(buf, count);
+  tud_cdc_write("\r\n", 2);
+  
 }
 
 
