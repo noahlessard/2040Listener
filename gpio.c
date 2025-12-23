@@ -1,19 +1,34 @@
 #include "hardware/gpio.h"
 #include "pinconfig.h"
+#include "tusb.h"
 
 
-void setup_stealth_mode()
+
+// the default behavior upon start up depends on this
+bool cdc_enabled = false;
+
+void setup_cdc_mode()
 {
   gpio_init(PIN_STEALTH_MODE);
   gpio_set_dir(PIN_STEALTH_MODE, GPIO_IN);
 }
 
-bool check_stealth_mode()
-{
+void check_cdc_mode()
+{ 
+  bool new_cdc_mode;
   if (gpio_get(PIN_STEALTH_MODE) == 1) {
-    return true;  
+    new_cdc_mode = true;
   }
   else {
-    return false;
+    new_cdc_mode = false;
   }
+
+  // if the value changed, reconnect USB with new config
+  if (new_cdc_mode != cdc_enabled) {
+    cdc_enabled = new_cdc_mode;
+    tud_disconnect();
+    sleep_ms(1500);
+    tud_connect();
+  }
+
 }

@@ -50,8 +50,8 @@
 extern void core1_main();
 
 // import gpio functions for stealth mode operations
-extern void setup_stealth_mode();
-extern bool check_stealth_mode();
+extern void setup_cdc_mode();
+extern bool check_cdc_mode();
 
 // core0: handle device events
 int main(void) {
@@ -66,14 +66,14 @@ int main(void) {
 
   // init device stack on native usb (roothub port0)
   tud_init(0);
-  setup_stealth_mode();
-  
+  setup_cdc_mode();
+  check_cdc_mode();
+
   // device task, handles sending all CDC and HID events over USB to real host
   while (true) {
+    check_cdc_mode();
     tud_task(); // tinyusb device task, process all usb events (CDC & HID)
-    if (check_stealth_mode()) {
-      tud_cdc_write_flush(); // send all data when available
-    }
+    tud_cdc_write_flush(); // send all data when available
   }
 
   return 0;

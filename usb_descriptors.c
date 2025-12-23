@@ -93,6 +93,9 @@ enum
 #define EPNUM_HID   0x83
 
 #define CONFIG_TOTAL_LEN    (TUD_CONFIG_DESC_LEN + TUD_CDC_DESC_LEN + TUD_HID_DESC_LEN)
+#define CONFIG_NO_CDC_LEN    (TUD_CONFIG_DESC_LEN + TUD_HID_DESC_LEN)
+
+extern bool cdc_enabled;
 
 uint8_t const desc_hid_report[] =
 {
@@ -111,8 +114,19 @@ uint8_t const desc_fs_configuration[] =
 
   // Interface number, string index, EP notification address and size, EP data address (out, in) and size.
   TUD_CDC_DESCRIPTOR(ITF_NUM_CDC, 4, EPNUM_CDC_NOTIF, 8, EPNUM_CDC_OUT, EPNUM_CDC_IN, 64),
+
     // Interface number, string index, protocol, report descriptor len, EP In address, size & polling interval
   TUD_HID_DESCRIPTOR(ITF_NUM_HID, 0, HID_ITF_PROTOCOL_NONE, sizeof(desc_hid_report), EPNUM_HID, CFG_TUD_HID_EP_BUFSIZE, 5)
+};
+
+// no cdc configuration
+uint8_t const desc_config_without_cdc[] =
+{
+  // Config number, interface count, string index, total length, attribute, power in mA
+  TUD_CONFIG_DESCRIPTOR(1, ITF_NUM_TOTAL - 2, 0, CONFIG_NO_CDC_LEN, 0x00, 100),
+
+  // Interface number, string index, protocol, report descriptor len, EP In address, size & polling interval
+  TUD_HID_DESCRIPTOR(ITF_NUM_HID - 2, 0, HID_ITF_PROTOCOL_NONE, sizeof(desc_hid_report), EPNUM_HID, CFG_TUD_HID_EP_BUFSIZE, 5)
 };
 
 // Invoked when received GET CONFIGURATION DESCRIPTOR
@@ -121,7 +135,13 @@ uint8_t const desc_fs_configuration[] =
 uint8_t const * tud_descriptor_configuration_cb(uint8_t index)
 {
   (void) index; // for multiple configurations
-  return desc_fs_configuration;
+
+  if (cdc_enabled) {
+    return desc_fs_configuration;
+  } else {
+    return desc_config_without_cdc;
+  }
+
 }
 
 
