@@ -71,31 +71,56 @@ int main(void) {
   return 0;
 }
 
-//--------------------------------------------------------------------+
-// Device CDC
-//--------------------------------------------------------------------+
+// Checks CDC input to see if it was a command
+void check_command(char* cmd, uint8_t len)
+{
+  if (strncmp(cmd, "reset", len) == 0 && len != 0)
+  {
+    tud_cdc_write_str("\r\nResetting device...");
+  }
+  else{
+    tud_cdc_write_str("\r\nUnknown command");
+  }
+}
+
+
 
 // Invoked when CDC interface received data from host
+// Handles CLI input over USB CDC
 void tud_cdc_rx_cb(uint8_t itf)
 {
   (void) itf;
 
-  char buf[64];
-  uint32_t count = tud_cdc_read(buf, sizeof(buf));
+  static uint8_t total_buf[256];
+  static uint8_t len = 0;
 
-  // TODO send a simple received string message when getting data from CDC
-  // TODO control LED on keyboard of host stack
-  //(void) count;
-  char rxmessage[64];
-  int len = sprintf(rxmessage, "Received %d bytes from host\r\n", count);
-  tud_cdc_write(rxmessage, len);
+  uint8_t buf[32];  
+  uint8_t count = tud_cdc_read(buf, sizeof(buf));
 
-  // Echo back the received data
-  tud_cdc_write(buf, count);
-  tud_cdc_write("\r\n", 2);
-  
+
+  // if newline, terminate string and print it
+  if (buf[count-1] == '\r' || buf[count-1] == '\n') {
+
+    len = count + len;
+    total_buf[len-1] = '\0';
+    //tud_cdc_write(total_buf, len);
+
+    check_command((char*)total_buf, len-1);
+
+    len = 0;
+    tud_cdc_write("\r\n", 2);
+
+  } 
+  // if there is space for more data, copy to total_buf
+  else {
+    
+    if (len + count < sizeof(total_buf)) {
+      tud_cdc_write(buf, count);
+      memcpy(&total_buf[len], buf, count);
+      len = count + len;
+    }
+  }
 }
-
 
 
 
