@@ -279,10 +279,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "C:/Users/Lindsay/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++.exe"
 		},
 		{
@@ -407,10 +407,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "C:/Users/Lindsay/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc.exe"
 		},
 		{

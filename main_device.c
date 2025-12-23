@@ -42,11 +42,16 @@
 #include "usb_descriptors.h"
 #include "hardware/clocks.h"
 
+#include "pinconfig.h"
 
 /*------------- MAIN -------------*/
 
 // core1: handle host events
 extern void core1_main();
+
+// import gpio functions for stealth mode operations
+extern void setup_stealth_mode();
+extern bool check_stealth_mode();
 
 // core0: handle device events
 int main(void) {
@@ -61,15 +66,19 @@ int main(void) {
 
   // init device stack on native usb (roothub port0)
   tud_init(0);
-
+  setup_stealth_mode();
+  
   // device task, handles sending all CDC and HID events over USB to real host
   while (true) {
     tud_task(); // tinyusb device task, process all usb events (CDC & HID)
-    tud_cdc_write_flush(); // send all data when available
+    if (check_stealth_mode()) {
+      tud_cdc_write_flush(); // send all data when available
+    }
   }
 
   return 0;
 }
+
 
 // Checks CDC input to see if it was a command
 void check_command(char* cmd, uint8_t len)
