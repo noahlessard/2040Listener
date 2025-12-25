@@ -44,6 +44,10 @@
 
 #include "pinconfig.h"
 
+#include "pico_lfs.h"
+
+#define FS_SIZE (256 * 1024)
+
 /*------------- MAIN -------------*/
 
 // core1: handle host events
@@ -52,6 +56,11 @@ extern void core1_main();
 // import gpio functions for stealth mode operations
 extern void setup_cdc_mode();
 extern bool check_cdc_mode();
+extern volatile bool core1_ready;
+
+// set up lfs configs
+static struct lfs_config *lfs_cfg;
+static lfs_t lfs;
 
 // core0: handle device events
 int main(void) {
@@ -63,6 +72,26 @@ int main(void) {
   multicore_reset_core1();
   // all USB task run in core1
   multicore_launch_core1(core1_main);
+
+  // wait unitl core1 is ready before launching LFS
+  while (!core1_ready) {
+    tight_loop_contents();
+  }
+
+  // init LFS
+  lfs_cfg = pico_lfs_init(PICO_FLASH_SIZE_BYTES - FS_SIZE, FS_SIZE);
+  if (!lfs_cfg)
+      panic("out of memory");
+
+  int err = lfs_mount(&lfs, lfs_cfg);
+  if (err != LFS_ERR_OK) {
+      err = lfs_format(&lfs, lfs_cfg);  // This will now work!
+      if (err != LFS_ERR_OK)
+          panic("failed to format filesystem");
+      err = lfs_mount(&lfs, lfs_cfg);
+      if (err != LFS_ERR_OK)
+          panic("failed to mount new filesystem");
+  }
 
   // init device stack on native usb (roothub port0)
   tud_init(0);

@@ -48,7 +48,7 @@
 //--------------------------------------------------------------------+
 
 
-
+volatile bool core1_ready = false;
 static uint8_t const keycode2ascii[128][2] =  { HID_KEYCODE_TO_ASCII };
 
 
@@ -57,6 +57,10 @@ static uint8_t const keycode2ascii[128][2] =  { HID_KEYCODE_TO_ASCII };
 // core1: handle host events
 void core1_main() {
   sleep_ms(10);
+
+  // need to allow this core to be paused by core0! Otherwise LFS won't work
+  multicore_lockout_victim_init();
+  core1_ready = true;  
 
   // Use tuh_configure() to pass pio configuration to the host stack
   // Note: tuh_configure() must be called before
