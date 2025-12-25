@@ -18,4 +18,9 @@ General idea is core0 acts as the USB communicator to the real host, sending bot
 |-|-|
 |D-|GP 1|
 |D+|GP 0|
+|CNC Toggle|GP 3|
 |Ground|GND|
+
+## Credits
+Dual host + device listener example from here: https://github.com/brendena/pico_device_and_host, although I used a fork for the Pico VS Code extension: https://github.com/TheLowSpecPC/pico_device_and_host_updated. LittleFS was ported to Pico in this library: https://github.com/tjko/pico-lfs.
+
