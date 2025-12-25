@@ -104,12 +104,10 @@
 4183	7638	7881523731530794	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/Pico-PIO-USB/src/pio_usb.c.obj	497c60bed36af35
 6675	7951	7881523756450966	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/C_/Users/Lindsay/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_host.c.obj	ace15f63efa9ec4c
 6479	8123	7881523754490793	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/C_/Users/Lindsay/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/host/usbh.c.obj	bcac67d59526e75f
-407	1045	7883487357812017	USB_DEVICE_AND_KEYBOARD.elf	72798fc8fa46d259
+498	1386	7883489930270688	USB_DEVICE_AND_KEYBOARD.elf	72798fc8fa46d259
 84	315	7881523692790809	C:/Users/Lindsay/Documents/2040Listener/build/pico_pio_usb/usb_tx.pio.h	fed9edd0f5a67612
 94	315	7881523692800813	C:/Users/Lindsay/Documents/2040Listener/build/pico_pio_usb/usb_rx.pio.h	bc95511fac48a711
 618	744	7881523697030799	C:/Users/Lindsay/Documents/2040Listener/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin	c7fd58bacbd7284d
 744	888	7881523698350779	C:/Users/Lindsay/Documents/2040Listener/build/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S	cb91353939842407
 6296	7397	7881523752650800	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/C_/Users/Lindsay/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj	1c961fdffd580788
-88	406	7883487354621994	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/gpio.c.obj	f7d9425dfa0625ec
 86	497	7883489926150655	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/gpio.c.obj	f7d9425dfa0625ec
-498	1386	7883489930270688	USB_DEVICE_AND_KEYBOARD.elf	72798fc8fa46d259

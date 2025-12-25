@@ -199,3 +199,5 @@ C:/Users/Lindsay/Documents/2040Listener/build/pico_pio_usb/CMakeFiles/pico_pio_u
 C:/Users/Lindsay/Documents/2040Listener/build/pico_pio_usb/CMakeFiles/pico_pio_usb_usb_rx_pio_h.dir
 C:/Users/Lindsay/Documents/2040Listener/build/pico_pio_usb/CMakeFiles/edit_cache.dir
 C:/Users/Lindsay/Documents/2040Listener/build/pico_pio_usb/CMakeFiles/rebuild_cache.dir
+C:/Users/Lindsay/Documents/2040Listener/build/libs/pico-lfs/CMakeFiles/edit_cache.dir
+C:/Users/Lindsay/Documents/2040Listener/build/libs/pico-lfs/CMakeFiles/rebuild_cache.dir

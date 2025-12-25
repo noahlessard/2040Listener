@@ -9,7 +9,8 @@
 					"childIndexes" : 
 					[
 						1,
-						96
+						96,
+						97
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -1202,6 +1203,17 @@
 						5,
 						6
 					]
+				},
+				{
+					"build" : "libs/pico-lfs",
+					"jsonFile" : "directory-libs.pico-lfs-Debug-aae607eee31f04bee9fd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "libs/pico-lfs"
 				}
 			],
 			"name" : "Debug",
@@ -1210,7 +1222,8 @@
 				{
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"directoryIndexes" : 
 					[
@@ -1333,6 +1346,14 @@
 						3,
 						4
 					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						97
+					],
+					"name" : "pico-lfs",
+					"parentIndex" : 0
 				}
 			],
 			"targets" : 
@@ -1340,7 +1361,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "USB_DEVICE_AND_KEYBOARD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-USB_DEVICE_AND_KEYBOARD-Debug-1ae9cafdfe96e157ad7a.json",
+					"jsonFile" : "target-USB_DEVICE_AND_KEYBOARD-Debug-961a3c186ebf1704bf00.json",
 					"name" : "USB_DEVICE_AND_KEYBOARD",
 					"projectIndex" : 0
 				},

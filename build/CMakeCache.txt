@@ -173,6 +173,21 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=USB_DEVICE_AND_KEYBOARD
 
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=1.0.0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Users/Lindsay/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-ranlib.exe
 
@@ -336,6 +351,15 @@ USB_DEVICE_AND_KEYBOARD_IS_TOP_LEVEL:STATIC=ON
 USB_DEVICE_AND_KEYBOARD_SOURCE_DIR:STATIC=C:/Users/Lindsay/Documents/2040Listener
 
 //Value Computed by CMake
+pico-lfs_BINARY_DIR:STATIC=C:/Users/Lindsay/Documents/2040Listener/build/libs/pico-lfs
+
+//Value Computed by CMake
+pico-lfs_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+pico-lfs_SOURCE_DIR:STATIC=C:/Users/Lindsay/Documents/2040Listener/libs/pico-lfs
+
+//Value Computed by CMake
 pico_sdk_BINARY_DIR:STATIC=C:/Users/Lindsay/Documents/2040Listener/build/pico-sdk
 
 //Value Computed by CMake
@@ -464,7 +488,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=97
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=98
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

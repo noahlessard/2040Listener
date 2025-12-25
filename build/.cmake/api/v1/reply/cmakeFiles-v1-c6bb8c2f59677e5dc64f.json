@@ -764,6 +764,9 @@
 		{
 			"isExternal" : true,
 			"path" : "C:/Users/Lindsay/.pico-sdk/tools/2.1.1/pioasm/pioasmTargets-release.cmake"
+		},
+		{
+			"path" : "libs/pico-lfs/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

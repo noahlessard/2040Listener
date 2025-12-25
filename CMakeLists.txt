@@ -22,6 +22,7 @@ project(USB_DEVICE_AND_KEYBOARD)
 pico_sdk_init()
 
 add_subdirectory("./Pico-PIO-USB" pico_pio_usb)
+add_subdirectory(libs/pico-lfs)
 
 set(target_name USB_DEVICE_AND_KEYBOARD)
 add_executable(${target_name})
@@ -51,3 +52,6 @@ target_include_directories(${target_name} PRIVATE ${CMAKE_CURRENT_LIST_DIR})
 target_link_libraries(${target_name} PRIVATE pico_stdlib pico_pio_usb tinyusb_device tinyusb_host)
 pico_add_extra_outputs(${target_name})
 
+target_link_libraries(${target_name} PRIVATE pico-lfs)
+
+target_compile_definitions(${target_name} PRIVATE LFS_THREADSAFE=1 LFS_NO_DEBUG=1)
