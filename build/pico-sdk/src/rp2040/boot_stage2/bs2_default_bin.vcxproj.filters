@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Lindsay\Documents\2040Listener\build\CMakeFiles\9d850c66f0a0683529761b62bee0725e\bs2_default.bin.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Lindsay\Documents\2040Listener\build\CMakeFiles\f1741c83ec03dd4bf1e6d62fc7997217\bs2_default_bin.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Lindsay\.pico-sdk\sdk\2.1.1\src\rp2040\boot_stage2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Lindsay\Documents\2040Listener\build\pico-sdk\src\rp2040\boot_stage2\CMakeFiles\bs2_default_bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{05E6ADA4-8023-3FB3-A300-9442D2CC4458}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

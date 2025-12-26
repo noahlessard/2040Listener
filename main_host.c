@@ -40,6 +40,9 @@
 #include "pio_usb.h"
 #include "tusb.h"
 #include "usb_descriptors.h"
+#include "pico_lfs.h"
+
+#include "pico/util/queue.h"
 
 
 
@@ -50,7 +53,7 @@
 
 volatile bool core1_ready = false;
 static uint8_t const keycode2ascii[128][2] =  { HID_KEYCODE_TO_ASCII };
-
+extern queue_t keypress_queue;
 
 /*------------- MAIN -------------*/
 
@@ -175,10 +178,12 @@ static void process_kbd_report(uint8_t dev_addr, hid_keyboard_report_t const *re
 
         if (ch)
         {
+          queue_try_add(&keypress_queue, &ch);
           if (ch == '\n') tud_cdc_write("\r", 1);
           // also, write to cdc for logging, which will be sent in core0
           tud_cdc_write(&ch, 1);
           flush = true;
+
         }
       }
     }

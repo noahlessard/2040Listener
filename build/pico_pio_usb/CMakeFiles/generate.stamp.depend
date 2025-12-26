@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Users/Lindsay/.pico-sdk/tools/2.1.1/pioasm/pioasmConfig.cmake
+C:/Users/Lindsay/.pico-sdk/tools/2.1.1/pioasm/pioasmConfigVersion.cmake
+C:/Users/Lindsay/.pico-sdk/tools/2.1.1/pioasm/pioasmTargets-release.cmake
+C:/Users/Lindsay/.pico-sdk/tools/2.1.1/pioasm/pioasmTargets.cmake
+C:/Users/Lindsay/Documents/2040Listener/Pico-PIO-USB/CMakeLists.txt

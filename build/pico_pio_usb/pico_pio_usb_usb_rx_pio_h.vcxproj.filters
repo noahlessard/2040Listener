@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Lindsay\Documents\2040Listener\build\CMakeFiles\51cca095422f2e5f4f98effad4350cf2\usb_rx.pio.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Lindsay\Documents\2040Listener\build\CMakeFiles\1b25a79484aca61c91644a7d37067250\pico_pio_usb_usb_rx_pio_h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Lindsay\Documents\2040Listener\Pico-PIO-USB\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Lindsay\Documents\2040Listener\build\pico_pio_usb\CMakeFiles\pico_pio_usb_usb_rx_pio_h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{05E6ADA4-8023-3FB3-A300-9442D2CC4458}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Users/Lindsay/.pico-sdk/cmake/v3.31.5/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake
+C:/Users/Lindsay/.pico-sdk/cmake/v3.31.5/share/cmake-3.31/Modules/FindPackageMessage.cmake
+C:/Users/Lindsay/.pico-sdk/cmake/v3.31.5/share/cmake-3.31/Modules/FindPython/Support.cmake
+C:/Users/Lindsay/.pico-sdk/cmake/v3.31.5/share/cmake-3.31/Modules/FindPython3.cmake
+C:/Users/Lindsay/.pico-sdk/sdk/2.1.1/src/rp2040/boot_stage2/CMakeLists.txt

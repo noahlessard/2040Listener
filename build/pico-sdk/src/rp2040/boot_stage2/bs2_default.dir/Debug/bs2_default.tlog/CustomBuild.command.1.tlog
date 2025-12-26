@@ -1,0 +1,10 @@
+^C:\USERS\LINDSAY\.PICO-SDK\SDK\2.1.1\SRC\RP2040\BOOT_STAGE2\CMAKELISTS.TXT
+setlocal
+C:\Users\Lindsay\.pico-sdk\cmake\v3.31.5\bin\cmake.exe -SC:/Users/Lindsay/Documents/2040Listener -BC:/Users/Lindsay/Documents/2040Listener/build --check-stamp-file C:/Users/Lindsay/Documents/2040Listener/build/pico-sdk/src/rp2040/boot_stage2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

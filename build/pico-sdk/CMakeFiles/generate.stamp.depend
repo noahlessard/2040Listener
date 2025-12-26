@@ -1,0 +1,11 @@
+# CMake generation dependency list for this directory.
+C:/Users/Lindsay/.pico-sdk/cmake/v3.31.5/share/cmake-3.31/Modules/CMakeASMInformation.cmake
+C:/Users/Lindsay/.pico-sdk/cmake/v3.31.5/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Users/Lindsay/.pico-sdk/cmake/v3.31.5/share/cmake-3.31/Modules/Compiler/GNU-ASM.cmake
+C:/Users/Lindsay/.pico-sdk/cmake/v3.31.5/share/cmake-3.31/Modules/Compiler/GNU.cmake
+C:/Users/Lindsay/.pico-sdk/cmake/v3.31.5/share/cmake-3.31/Modules/Internal/CMakeASMLinkerInformation.cmake
+C:/Users/Lindsay/.pico-sdk/sdk/2.1.1/CMakeLists.txt
+C:/Users/Lindsay/.pico-sdk/sdk/2.1.1/pico_sdk_init.cmake
+C:/Users/Lindsay/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/generate_config_header.cmake
+C:/Users/Lindsay/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/version.h.in
+C:/Users/Lindsay/Documents/2040Listener/build/CMakeFiles/3.31.5/CMakeASMCompiler.cmake

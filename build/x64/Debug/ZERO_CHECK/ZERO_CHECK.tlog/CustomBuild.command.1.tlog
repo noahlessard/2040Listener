@@ -1,0 +1,10 @@
+^C:\USERS\LINDSAY\DOCUMENTS\2040LISTENER\BUILD\CMAKEFILES\04835966C902C1E480CD67AB07FA16C3\GENERATE.STAMP.RULE
+setlocal
+C:\Users\Lindsay\.pico-sdk\cmake\v3.31.5\bin\cmake.exe -SC:/Users/Lindsay/Documents/2040Listener -BC:/Users/Lindsay/Documents/2040Listener/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Lindsay/Documents/2040Listener/build/USB_DEVICE_AND_KEYBOARD.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
