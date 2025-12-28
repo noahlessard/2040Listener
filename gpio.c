@@ -3,7 +3,7 @@
 #include "tusb.h"
 
 // the default behavior upon start up depends on this
-bool cdc_enabled = true;
+bool cdc_enabled = false;
 bool button_pressed = false;
 
 void setup_cdc_mode()
