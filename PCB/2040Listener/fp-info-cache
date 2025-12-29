@@ -1,4 +1,4 @@
-26763795859785580
+26781465877871314
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -70580,6 +70580,76 @@ Yellow 5381 Series LED
 0
 2
 2
+Library
+ABM8-272-T3_ABR
+
+ABM8-272-T3 
+0
+4
+4
+Library
+CONN4_292303_TEC
+
+292303-2 
+0
+6
+6
+Library
+CONN_USB-AP-S-RA-SMT_ADM
+
+USB-AP-S-RA-SMT 
+0
+4
+4
+Library
+C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+capacitor handsolder
+0
+2
+2
+Library
+LED_SML-LXT0805IW-TR_LUM
+
+SML-LXT0805IW-TR 
+0
+2
+2
+Library
+RP2040-QFN-56
+QFN, 56 Pin (http://www.cypress.com/file/416486/download#page=40), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
+QFN DFN_QFN
+0
+70
+57
+Library
+SOIC127P600X175-8N
+
+
+0
+8
+8
+Library
+SOT223-3_ONS
+
+NCP1117LPST33T3G 
+0
+3
+3
+Library
+SW4_PTS815 SJM 250 SMTR LFS_CNK
+
+PTS815 SJM 250 SMTR LFS 
+0
+4
+4
+Library
+Untitled
+
+
+0
+0
+0
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
