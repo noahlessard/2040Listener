@@ -1696,7 +1696,7 @@
 		(symbol "PTS815_SJM_250_SMTR_LFS_0_1"
 			(polyline
 				(pts
-					(xy 7.62 2.54) (xy 7.62 -15.24)
+					(xy 21.59 2.54) (xy 21.59 -15.24)
 				)
 				(stroke
 					(width 0.127)
@@ -1708,7 +1708,7 @@
 			)
 			(polyline
 				(pts
-					(xy 7.62 0) (xy 73.66 0)
+					(xy 21.59 0) (xy 59.69 0)
 				)
 				(stroke
 					(width 0.127)
@@ -1720,7 +1720,7 @@
 			)
 			(polyline
 				(pts
-					(xy 7.62 -15.24) (xy 73.66 -15.24)
+					(xy 21.59 -15.24) (xy 59.69 -15.24)
 				)
 				(stroke
 					(width 0.127)
@@ -1812,7 +1812,7 @@
 			)
 			(polyline
 				(pts
-					(xy 73.66 2.54) (xy 7.62 2.54)
+					(xy 59.69 2.54) (xy 21.59 2.54)
 				)
 				(stroke
 					(width 0.127)
@@ -1824,7 +1824,7 @@
 			)
 			(polyline
 				(pts
-					(xy 73.66 -12.7) (xy 7.62 -12.7)
+					(xy 59.69 -12.7) (xy 21.59 -12.7)
 				)
 				(stroke
 					(width 0.127)
@@ -1836,7 +1836,7 @@
 			)
 			(polyline
 				(pts
-					(xy 73.66 -15.24) (xy 73.66 2.54)
+					(xy 59.69 -15.24) (xy 59.69 2.54)
 				)
 				(stroke
 					(width 0.127)
@@ -1847,7 +1847,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 0 0 0)
+				(at 13.97 0 0)
 				(length 7.62)
 				(name "1"
 					(effects
@@ -1865,7 +1865,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 0 -12.7 0)
+				(at 13.97 -12.7 0)
 				(length 7.62)
 				(name "3"
 					(effects
@@ -1883,7 +1883,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 81.28 0 180)
+				(at 67.31 0 180)
 				(length 7.62)
 				(name "2"
 					(effects
@@ -1901,7 +1901,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 81.28 -12.7 180)
+				(at 67.31 -12.7 180)
 				(length 7.62)
 				(name "4"
 					(effects

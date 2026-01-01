@@ -493,7 +493,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:SOIC127P600X175-8N"
 			(at 0 0 0)
 			(effects
 				(font
