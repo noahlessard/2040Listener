@@ -4880,7 +4880,7 @@
 		)
 		(uuid "202c54ea-1c32-42df-a5d1-9dea39021430")
 	)
-	(text "Make sure C10 is close to pin 44 of RP2040"
+	(text "Make sure C5 is close to pin 44 of RP2040"
 		(exclude_from_sim no)
 		(at 130.81 45.72 0)
 		(effects
@@ -4891,9 +4891,9 @@
 		)
 		(uuid "368ee4cd-26ed-4905-ad19-6248ca5172f9")
 	)
-	(text "Make sure R3 and R4 are close to RP2040"
+	(text "Make sure R1, R2, R7, and R8 are close to RP2040"
 		(exclude_from_sim no)
-		(at 152.4 62.23 0)
+		(at 149.86 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4946,7 +4946,7 @@
 		)
 		(uuid "aab47dd7-adde-45a2-a8a2-6e0ff445e7ee")
 	)
-	(text "Make sure C8 is close to pin 45 of RP2040"
+	(text "Make sure C4 is close to pin 45 of RP2040"
 		(exclude_from_sim no)
 		(at 20.32 44.45 0)
 		(effects
