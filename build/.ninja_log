@@ -25,10 +25,10 @@
 1114	2585	7884405887896328	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/C_/Users/Lindsay/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.obj	7fa6a372b5bd8488
 1062	2632	7884405887386336	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/C_/Users/Lindsay/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.obj	4c409a1cef78204d
 104	449	7884418333950673	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/gpio.c.obj	e67b2b4b7d27d704
-91	597	7884418333820661	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/main_device.c.obj	25e45388caa7f196
+130	2003	7886168197389861	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/main_device.c.obj	25e45388caa7f196
 1020	2909	7884405886966314	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/C_/Users/Lindsay/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/pio_usb/hcd_pio_usb.c.obj	878ee912039f7b48
 1888	2922	7884405895636318	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/C_/Users/Lindsay/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.obj	73c9de59f528f8f2
-81	534	7884418629708732	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/main_host.c.obj	ed9ccb14bd8b7b9d
+74	512	7884422427101397	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/main_host.c.obj	ed9ccb14bd8b7b9d
 2923	3281	7884405905986362	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/C_/Users/Lindsay/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.obj	779b439f62815988
 2524	3441	7884405901996321	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/C_/Users/Lindsay/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.obj	9f3c8cd50daaa5e2
 2370	3458	7884405900546335	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/C_/Users/Lindsay/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.obj	938bd978b125329d
@@ -110,13 +110,4 @@
 7430	9386	7884405951061734	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/C_/Users/Lindsay/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_host.c.obj	7b7fd096b9dc0e1a
 7275	9492	7884405949511719	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/C_/Users/Lindsay/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/host/usbh.c.obj	a3236758a8222b86
 7806	11065	7884405954821700	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/libs/pico-lfs/libs/littlefs/lfs.c.obj	4bb5a6427b1f9e2b
-535	1628	7884418634248765	USB_DEVICE_AND_KEYBOARD.elf	1668f91aae320d2b
-95	660	7884421517666219	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/main_host.c.obj	ed9ccb14bd8b7b9d
-88	663	7884421517596222	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/main_device.c.obj	25e45388caa7f196
-663	1528	7884421523356247	USB_DEVICE_AND_KEYBOARD.elf	1668f91aae320d2b
-74	512	7884422427101397	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/main_host.c.obj	ed9ccb14bd8b7b9d
-513	1182	7884422431501408	USB_DEVICE_AND_KEYBOARD.elf	1668f91aae320d2b
-87	547	7884423443315872	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/main_device.c.obj	25e45388caa7f196
-547	1211	7884423447925881	USB_DEVICE_AND_KEYBOARD.elf	1668f91aae320d2b
-130	2003	7886168197389861	CMakeFiles/USB_DEVICE_AND_KEYBOARD.dir/main_device.c.obj	25e45388caa7f196
 2004	6131	7886168216129912	USB_DEVICE_AND_KEYBOARD.elf	1668f91aae320d2b
