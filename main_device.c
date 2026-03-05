@@ -110,7 +110,7 @@ int main(void) {
   // device task, handles sending all CDC and HID events over USB to real host
   while (true) {
 
-    //check_cdc_mode();
+    check_cdc_mode();
 
     uint8_t ch;
     if (queue_try_remove(&keypress_queue, &ch)) {
