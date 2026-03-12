@@ -1,1 +1,1 @@
-#define PIN_STEALTH_MODE 3
+#define PIN_STEALTH_MODE 17
