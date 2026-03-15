@@ -4849,7 +4849,7 @@
 	)
 	(rectangle
 		(start 17.78 200.66)
-		(end 203.2 274.32)
+		(end 203.2 279.4)
 		(stroke
 			(width 0)
 			(type default)
@@ -4870,15 +4870,35 @@
 		)
 		(uuid "02809b25-6f40-4461-ad7b-479f2977d065")
 	)
+	(text "BULK (OPTIONAL)"
+		(exclude_from_sim no)
+		(at 129.794 238.506 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0e33195b-4cf8-479b-abe0-fb82ced38f82")
+	)
 	(text "USB"
 		(exclude_from_sim no)
-		(at 25.146 279.4 0)
+		(at 24.892 282.956 0)
 		(effects
 			(font
 				(size 5.08 5.08)
 			)
 		)
 		(uuid "202c54ea-1c32-42df-a5d1-9dea39021430")
+	)
+	(text "C22 OPTIONAL"
+		(exclude_from_sim no)
+		(at 158.496 143.764 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "307f8162-2c61-4490-80bf-5bafd5c85ddf")
 	)
 	(text "Make sure C5 is close to pin 44 of RP2040"
 		(exclude_from_sim no)
@@ -4901,6 +4921,26 @@
 			(justify left bottom)
 		)
 		(uuid "38678496-9df1-4082-823e-12b4bdcb39d9")
+	)
+	(text "BULK + DECOUPLE"
+		(exclude_from_sim no)
+		(at 160.782 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "39861b29-0610-4e25-942b-c3eadfee1d07")
+	)
+	(text "BULK (OPTIONAL)"
+		(exclude_from_sim no)
+		(at 133.096 271.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3bf0c06b-0056-4549-b4f8-16022e3768fb")
 	)
 	(text "CDC Toggle"
 		(exclude_from_sim no)
@@ -5006,6 +5046,12 @@
 		(uuid "2f0f1b0b-d1be-4a2c-ae75-919532f9efcc")
 	)
 	(junction
+		(at 107.95 261.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f29451e-6374-4bad-aa48-fcb85b3b5fb3")
+	)
+	(junction
 		(at 123.19 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5046,6 +5092,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "57424e33-3044-488a-bef2-0eec6543a80e")
+	)
+	(junction
+		(at 105.41 229.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "598dc8ba-d72c-4115-96d2-801e73c7a2aa")
 	)
 	(junction
 		(at 99.06 43.18)
@@ -5090,6 +5142,12 @@
 		(uuid "77ae1642-f819-44cf-95e7-b014e77014af")
 	)
 	(junction
+		(at 120.65 261.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d444825-9172-45d5-aaea-8c2736e72055")
+	)
+	(junction
 		(at 110.49 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5130,6 +5188,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c975380f-0460-4c74-8672-35dd7a1d47cb")
+	)
+	(junction
+		(at 116.84 229.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3d0077f-5d03-4df3-a7e3-cd0193983180")
 	)
 	(junction
 		(at 168.91 22.86)
@@ -5675,6 +5739,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 121.92) (xy 152.4 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a4eee04-fd42-4aea-accb-583db8f2d48c")
+	)
+	(wire
+		(pts
 			(xy 180.34 31.75) (xy 180.34 34.29)
 		)
 		(stroke
@@ -5705,7 +5779,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 261.62) (xy 106.68 261.62)
+			(xy 104.14 261.62) (xy 107.95 261.62)
 		)
 		(stroke
 			(width 0)
@@ -5845,6 +5919,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 229.87) (xy 105.41 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f2b7480-c189-4ba4-a5c1-3bb43d6340fe")
+	)
+	(wire
+		(pts
 			(xy 104.14 257.81) (xy 96.52 257.81)
 		)
 		(stroke
@@ -5852,6 +5936,16 @@
 			(type default)
 		)
 		(uuid "5f8438d8-7d3c-4e7d-addd-48531a4a8f53")
+	)
+	(wire
+		(pts
+			(xy 105.41 229.87) (xy 96.52 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "607af176-135a-4962-acbe-d69f4155e59a")
 	)
 	(wire
 		(pts
@@ -5972,6 +6066,16 @@
 			(type default)
 		)
 		(uuid "7ed8acef-d4d2-4000-9f70-da2e34ccbd5e")
+	)
+	(wire
+		(pts
+			(xy 152.4 132.08) (xy 152.4 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f455741-da41-43c4-828c-6c5c70ac071c")
 	)
 	(wire
 		(pts
@@ -6212,6 +6316,16 @@
 			(type default)
 		)
 		(uuid "aaad5a88-c0a0-4f3a-83d1-3ac6f12544d6")
+	)
+	(wire
+		(pts
+			(xy 107.95 261.62) (xy 120.65 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab0e8503-bc22-420d-908d-fcaf0375699f")
 	)
 	(wire
 		(pts
@@ -6495,6 +6609,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 261.62) (xy 123.19 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9aade9d-fd19-4726-b0d9-91e64fd8d94b")
+	)
+	(wire
+		(pts
 			(xy 57.15 22.86) (xy 68.58 22.86)
 		)
 		(stroke
@@ -6552,16 +6676,6 @@
 			(type default)
 		)
 		(uuid "d2ac8591-8eaf-4445-a9a2-732d4a9fd70e")
-	)
-	(wire
-		(pts
-			(xy 104.14 229.87) (xy 104.14 233.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3b31ac2-7a29-42d7-bb99-d2641d51f435")
 	)
 	(wire
 		(pts
@@ -6735,7 +6849,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 229.87) (xy 96.52 229.87)
+			(xy 127 229.87) (xy 116.84 229.87)
 		)
 		(stroke
 			(width 0)
@@ -9992,6 +10106,70 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 152.4 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "07bf7f94-15c3-42d7-a248-53f4d14b675c")
+		(property "Reference" "#PWR033"
+			(at 152.4 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 152.781 117.5258 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f93ab68d-b377-4394-a5e3-42277d794c00")
+		)
+		(instances
+			(project "2040Listener"
+				(path "/a808e31f-6f6f-4c04-a547-e5c681d45c47"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SymbolLibrary:USB-AP-S-RA-SMT")
 		(at 96.52 257.81 180)
 		(unit 1)
@@ -10137,7 +10315,7 @@
 	(symbol
 		(lib_name "VBUS_1")
 		(lib_id "power:VBUS")
-		(at 106.68 261.62 270)
+		(at 123.19 261.62 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10146,7 +10324,7 @@
 		(fields_autoplaced yes)
 		(uuid "12bdc589-d926-4b09-8c9d-9e967a99b0a8")
 		(property "Reference" "#PWR09"
-			(at 102.87 261.62 0)
+			(at 119.38 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10155,7 +10333,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 110.49 261.6199 90)
+			(at 127 261.6199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10164,7 +10342,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 106.68 261.62 0)
+			(at 123.19 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10173,7 +10351,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 261.62 0)
+			(at 123.19 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10182,7 +10360,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 106.68 261.62 0)
+			(at 123.19 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10339,6 +10517,74 @@
 			(project "2040Listener"
 				(path "/a808e31f-6f6f-4c04-a547-e5c681d45c47"
 					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 116.84 233.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "42bb866c-d056-4a21-aece-9f0a4c798610")
+		(property "Reference" "C20"
+			(at 119.761 232.5116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 119.761 234.823 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 117.8052 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "10333c66-e146-46db-8e53-0cc093acf6d2")
+		)
+		(pin "2"
+			(uuid "840891b9-8ae1-456c-976f-a75b92ff24c7")
+		)
+		(instances
+			(project "2040Listener"
+				(path "/a808e31f-6f6f-4c04-a547-e5c681d45c47"
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -10979,6 +11225,138 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 152.4 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "75549a3f-d775-40d5-b89f-92ec6284f3fa")
+		(property "Reference" "#PWR034"
+			(at 152.4 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 148.59 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4ca63d32-4dd1-426b-bf13-7d1499692f58")
+		)
+		(instances
+			(project "2040Listener"
+				(path "/a808e31f-6f6f-4c04-a547-e5c681d45c47"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 120.65 265.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8bb33cfb-71ec-46a9-84e9-ed54f219f7bd")
+		(property "Reference" "C19"
+			(at 123.571 264.2616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 123.571 266.573 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 121.6152 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "21f9d58c-c5a6-4aa1-bdef-ce55abc81142")
+		)
+		(pin "2"
+			(uuid "7d190ae5-aebe-497e-b92e-f940dc97ae3d")
+		)
+		(instances
+			(project "2040Listener"
+				(path "/a808e31f-6f6f-4c04-a547-e5c681d45c47"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 151.13 83.82 270)
 		(unit 1)
@@ -11039,6 +11417,73 @@
 			(project "2040Listener"
 				(path "/a808e31f-6f6f-4c04-a547-e5c681d45c47"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 120.65 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a53a07cb-3fcd-4799-b0a6-6bd8917ccced")
+		(property "Reference" "#PWR030"
+			(at 120.65 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 120.65 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 120.65 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ec1b153-aa51-4e47-a278-92e021c48f06")
+		)
+		(instances
+			(project "2040Listener"
+				(path "/a808e31f-6f6f-4c04-a547-e5c681d45c47"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -11176,9 +11621,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 107.95 265.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce6d6076-ac27-4ef1-b134-5f90aa4b9c28")
+		(property "Reference" "C18"
+			(at 110.871 264.2616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 110.871 266.573 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 108.9152 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 107.95 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "53eab8ed-5b5f-409b-83c7-7f99f146e72a")
+		)
+		(pin "2"
+			(uuid "0a4efc35-568a-469d-ace7-5a0d2234b0f0")
+		)
+		(instances
+			(project "2040Listener"
+				(path "/a808e31f-6f6f-4c04-a547-e5c681d45c47"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "VBUS_2")
 		(lib_id "power:VBUS")
-		(at 104.14 233.68 270)
+		(at 127 229.87 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11187,7 +11700,7 @@
 		(fields_autoplaced yes)
 		(uuid "cf9a336c-6148-4a50-b420-2f519ec29de3")
 		(property "Reference" "#PWR07"
-			(at 100.33 233.68 0)
+			(at 123.19 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11196,7 +11709,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 107.95 233.6799 90)
+			(at 130.81 229.8699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11205,7 +11718,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 233.68 0)
+			(at 127 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11214,7 +11727,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 233.68 0)
+			(at 127 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11223,7 +11736,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 104.14 233.68 0)
+			(at 127 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11238,6 +11751,276 @@
 			(project ""
 				(path "/a808e31f-6f6f-4c04-a547-e5c681d45c47"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 105.41 233.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d06cb979-bd74-4355-a7fd-d76d794a16f6")
+		(property "Reference" "C21"
+			(at 108.331 232.5116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 108.331 234.823 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 106.3752 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c920d4f5-1977-429b-a974-d60d4ab42cff")
+		)
+		(pin "2"
+			(uuid "49332d63-51c5-41af-b89f-a631cf3718b6")
+		)
+		(instances
+			(project "2040Listener"
+				(path "/a808e31f-6f6f-4c04-a547-e5c681d45c47"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 152.4 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d4f34004-baed-4c64-934a-9bd14b3ca1ec")
+		(property "Reference" "C22"
+			(at 155.321 127.1016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 155.321 129.413 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 153.3652 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d32746e8-9020-4213-9dbb-a746cdcd8010")
+		)
+		(pin "2"
+			(uuid "f175f58d-361b-4cf4-9b88-a6764e250566")
+		)
+		(instances
+			(project "2040Listener"
+				(path "/a808e31f-6f6f-4c04-a547-e5c681d45c47"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 107.95 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e1c6aa3f-690d-43aa-accf-9b41fd46c593")
+		(property "Reference" "#PWR029"
+			(at 107.95 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 107.95 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 107.95 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59a83841-7bd1-4fa5-a71c-000ba8c9da29")
+		)
+		(instances
+			(project "2040Listener"
+				(path "/a808e31f-6f6f-4c04-a547-e5c681d45c47"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 116.84 237.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e44c32c1-bdea-4e68-ac0f-8f0c297d637a")
+		(property "Reference" "#PWR031"
+			(at 116.84 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 116.84 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 116.84 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "346d8133-0188-46be-9952-0ff81d3ae2dd")
+		)
+		(instances
+			(project "2040Listener"
+				(path "/a808e31f-6f6f-4c04-a547-e5c681d45c47"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -11372,6 +12155,73 @@
 			(project "2040Listener"
 				(path "/a808e31f-6f6f-4c04-a547-e5c681d45c47"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 105.41 237.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f85dd094-0aad-4db3-8661-27d9f4f1efe7")
+		(property "Reference" "#PWR032"
+			(at 105.41 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 105.41 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d88b640-2622-45d2-b042-209e9f0c0fc9")
+		)
+		(instances
+			(project "2040Listener"
+				(path "/a808e31f-6f6f-4c04-a547-e5c681d45c47"
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
