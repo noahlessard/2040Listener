@@ -2,21 +2,16 @@
 
 ![image](githubimage1.PNG)
 
-2040Listener is used for USB host/device communication using PIO of raspberry pi pico (RP2040). Build with VSCode Pico Project Extension. 
+This project contains the Raspberry Pi Pico C SDK Project, and Kicad PCB Project, to manufacture an open source MITM style keystroke interceptor. This style of device intercepts a host's computer request to get keystrokes, relays it to a real USB keyboard, and while returning the responses of typed keys, logs it to a LittleFS file stored in flash memory. This memory persists, and can be accessed through a CDC serial port. This port can be toggeled on/off for a "stealth" mode.
 
-General idea is core0 acts as the USB communicator to the real host, sending both HID and CDC data over USB. core1 acts as a "fake" host stack to a keyboard (or mouse). Core1 handles getting data from the HID devices, parsing out what the data is and writes to the picos buffers before core0 actually transmits. 
+USB host/device communication is done using PIO of raspberry pi pico (RP2040). I built the software with the VSCode Pico Project Extension. It uses several other open source libraries, which can be found in the credits section at the bottom of this readme. 
 
-## Versions
+The PCB is designed around the 0805 footprint for easier soldering, and a simple 2 layer board for cheaper manufacturing.
 
-|Pico SDK|2.1.1|
-|-|-|
-|ToolChain|14_2_Rel1|
-|PicoTool|2.1.1|
-|Cmake|3.31.5|
-|Ninja|1.12.1|
+The general idea of the firmware architecture is that core0 of the 2040 acts as a "fake" USB device to the victim computer, sending both HID and CDC data over USB. Core1 acts as a "fake" host stack to a keyboard. Core1 handles getting data from the HID devices, parsing out what the keystroke is and writes to the 2040's LittleFS file before core0 actually transmits. 
 
-## GPIO
-
+## GPIO 
+(This section is useful for testing on a normal Pico board, where access to GP pins is easier.)
 |VCC|VBUS|
 |-|-|
 |D-|GP 1|
@@ -25,4 +20,4 @@ General idea is core0 acts as the USB communicator to the real host, sending bot
 |Ground|GND|
 
 ## Credits
-Dual host + device listener example from here: https://github.com/brendena/pico_device_and_host, although I used a fork for the Pico VS Code extension: https://github.com/TheLowSpecPC/pico_device_and_host_updated. LittleFS was ported to Pico in this library: https://github.com/tjko/pico-lfs.
+Dual host + device listener example from here: https://github.com/brendena/pico_device_and_host, although I used a fork for the Pico VS Code extension: https://github.com/TheLowSpecPC/pico_device_and_host_updated. LittleFS was ported to Pico in this library: https://github.com/tjko/pico-lfs. I used the Raspberry Pi's foundation for a lot of advice during hardware design: https://pip-assets.raspberrypi.com/categories/814-rp2040/documents/RP-008279-DS-1-hardware-design-with-rp2040.pdf
